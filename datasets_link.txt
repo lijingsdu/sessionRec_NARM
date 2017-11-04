@@ -1,0 +1,2 @@
+YOOCHOOSE	http://2015.recsyschallenge.com/challenge.html
+DEGINETICA	http://cikm2016.cs.iupui.edu/cikm-cup

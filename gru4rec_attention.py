@@ -103,7 +103,7 @@ def init_params(options):
     # classifier
     # params['U'] = init_weights((2*options['hidden_units'], options['n_items']))
     # params['b'] = np.zeros((options['n_items'],)).astype(config.floatX)
-    params['bili'] = init_weights((options['dim_proj'], options['hidden_units']))
+    params['bili'] = init_weights((options['dim_proj'], 2 * options['hidden_units']))
 
     return params
 
