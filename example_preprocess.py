@@ -4,11 +4,10 @@ import pickle
 
 import operator
 
-# Load the diginetica dataset
-with open("/storage/lijing/mydataset/diginetica.csv", "rb") as f:
+# Load .csv dataset
+with open("", "rb") as f:
     reader = csv.DictReader(f, delimiter=',')
     sess_clicks = {}
-    # Only keep the 'starting' date for each session
     sess_date = {}
     ctr = 0
     curid = -1
@@ -133,10 +132,10 @@ te_seqs, te_dates, te_labs = process_seqs(test_seqs,test_dates)
 train = (tr_seqs, tr_labs)
 test = (te_seqs, te_labs)
 
-f1 = open('/storage/lijing/digi_train.pkl', 'w')
+f1 = open('', 'w')
 pickle.dump(train, f1)
 f1.close()
-f2 = open('/storage/lijing/digi_test.pkl', 'w')
+f2 = open('', 'w')
 pickle.dump(test, f2)
 f2.close()
 

@@ -15,9 +15,9 @@ from theano import config
 import theano.tensor as T
 from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
 
-import rsc2015_attention1_64
+import data_process
 
-datasets = {'rsc2015': (rsc2015_attention.load_data, rsc2015_attention.prepare_data)}
+datasets = {'rsc2015': (data_process.load_data, data_process.prepare_data)}
 
 # Set the random number generators' seeds for consistency
 SEED = 42
